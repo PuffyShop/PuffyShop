@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleContact.css">
+    <link rel="stylesheet" href="script.js">
+    <title>Puffy Shop</title>
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="/IMG/Logo.png" alt="Logo">
+        </a>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <div class="contact">
+            <a data-aos="flip-down" data-aos-delay="300" href="https://www.instagram.com/puffy.shopfr/" target="_blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Instagram
+            </a>
+
+            <a data-aos="flip-down" data-aos-delay="800" href="https://www.snapchat.com/add/puffy.shopfr?share_id=r26PDKcfh8w&locale=fr-FR" target="_blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Snapchat
+            </a>
+
+            <a data-aos="flip-down" data-aos-delay="1300" href="https://www.paypal.com/paypalme/nlnnolan8" target="_blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Paypal
+            </a>
+
+        </div>
+    </section>
+
+
+    <script type="text/javascript">
+        function slider(anything){
+            document.querySelector('.one').src = anything;
+        };
+
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open')
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 1
+        });
+    </script>
+
+</body>
+</html>

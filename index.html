@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleHome.css">
+    <link rel="stylesheet" href="script.js">
+    <title>Puffy Shop</title>
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="IMG/Logo.png" alt="Logo">
+        </a>
+
+        <ul class="navbar">
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="hero">
+        <div class="hero-img" data-aos="zoom-in" data-aos-duration="1500">
+            <img src="IMG/Image-Home.png" alt="IMG">
+        </div>
+        <div class="hero-text">
+            <h1 data-aos="fade-right" data-aos-duration="1400">PUFF <br> JNR 16k</h1>
+            <p data-aos="flip-down" data-aos-delay="1000">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <h5 data-aos="flip-down" data-aos-delay="1000">€13</h5>
+            <div class="hero-btnn">
+                <a data-aos="flip-down" data-aos-delay="1000" href="#" class="btn">Add to bag</a>
+                <a data-aos="flip-down" data-aos-delay="1000" href="#" class="btn2">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        function slider(anything){
+            document.querySelector('.one').src = anything;
+        };
+
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open')
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 1
+        });
+    </script>
+
+
+    <section id="products" class="products-section">
+        <h2>PUFF Goût</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/Tornado 9k/Blueberry-Cherry-Cranberry.jpg" alt="Product">
+                <h3>Blueberry Cherry Cranberry</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/Tornado 9k/Blueberry-Raspberry.jpg" alt="Product">
+                <h3>Blueberry Raspberry</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/Tornado 9k/Blueberry-Sour-Raspberry.jpg" alt="Product">
+                <h3>Blueberry Sour Raspberry</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/JNR 16k/Cherry-Berry.jpg" alt="Product">
+                <h3>Cherry Berry</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/Tornado 9k/Cherry.jpg" alt="Product">
+                <h3>Cherry</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/JNR 16k/Cherry-Cola.jpg" alt="Product">
+                <h3>Cherry Cola</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/Tornado 9k/Cherry-Peach-Lemonade.jpg" alt="Product">
+                <h3>Cherry Peach Lemonade</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/Tornado 9k/Fizzy-Cherry.jpg" alt="Product">
+                <h3>Fizzy Cherry</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/JNR 16k/Grape.jpg" alt="Product">
+                <h3>Grape</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/Tornado 9k/Gummy-Bear.jpg" alt="Product">
+                <h3>Gummy Bear</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/Tornado 9k/Kiwi-Passion-Fruit-Guava.jpg" alt="Product">
+                <h3>Kiwi Passion Fruit Guava</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/Tornado 9k/Mr-Blue.jpg" alt="Product">
+                <h3>Mr Blue</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/Tornado 9k/Mixed-Berries.jpg" alt="Product">
+                <h3>Mixed Berries</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/Tornado 9k/Peach-Berry.jpg" alt="Product">
+                <h3>Peach Berry</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/Tornado 9k/Peachy-Mango-Pineapple.jpg" alt="Product">
+                <h3>Peachy Mango Pineapple</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/Tornado 9k/Pineapple.jpg" alt="Product">
+                <h3>Pineapple</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/Tornado 9k/Pink-Lemonade.jpg" alt="Product">
+                <h3>Pink Lemonade</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/Tornado 9k/Prime-Strawberry-Watermelon.png" alt="Product">
+                <h3>Prime Strawberry Watermelon</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/Image-Home.png" alt="Product">
+                <h3>Rainbow Candy</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/Tornado 9k/Raspberry-Watermelon.jpg" alt="Product">
+                <h3>Raspberry Watermelon</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/Tornado 9k/strawberry-ice.jpg" alt="Product">
+                <h3>Strawberry Ice</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/Image-Home.png" alt="Product">
+                <h3>Strawberry Lemonade</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/Image-Home.png" alt="Product">
+                <h3>Strawberry Mango</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/Image-Home.png" alt="Product">
+                <h3>Strawberry Pomp</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/Image-Home.png" alt="Product">
+                <h3>Strawberry Watermelon Bubblegum</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/Tornado 9k/Watermelon-Bubblegum.png" alt="Product">
+                <h3>Watermelon Bubblegum</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/PUFF IMG/Tornado 9k/Watermelon-Brazz-Ice.jpg" alt="Product">
+                <h3>Watermelon Brazz Ice</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG/Image-Home.png" alt="Product">
+                <h3>Watermelon Skittles</h3>
+                <p>13 €</p>
+                <button class="btn-buy">En Savoir +</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Puffy Shop. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

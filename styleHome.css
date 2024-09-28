@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --background-color: #111111;
+  --text-color: #fff;
+  --primary-color: rgb(62, 228, 12);
+  --secondary-color: #11111;
+
+  --h1-font: 6rem;
+  --p-font: 1.1rem;
+
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+.unselectable {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding: 25px 9%;
+  display: flex;
+  align-items: center;
+  justify-content:  space-between;
+  transition: all .6s ease;
+}
+.logo img {
+  width: 100%;
+  height: auto;
+}
+.navbar {
+  display: flex;
+}
+.navbar a{
+  display: inline-block;
+  font-weight: 500;
+  color: var(--other-color);
+  margin: 0 35px;
+  padding:  4px 0;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+}
+  .navbar a:hover {
+      border-bottom: 2px solid var(--text-color);
+      color: var(--text-color);
+      transition: all .4s ease;
+  }
+
+section {
+  padding: 10% 5%;
+}
+
+
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 50px;
+  padding: 65px 15% 0px 15%;
+}
+.hero-img img {
+  width: 750px;
+  height: 700px;
+  border-radius: 10px;
+}
+.hero-text h1 {
+  font-size:  var(--h1-font);
+  line-height: 1.1;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.hero-text p {
+  width: 100%;
+  max-width: 500px;
+  font-size: var(--p-font);
+  color: var(--other-color);
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.hero-text h5 {
+  font-size: 37px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+}
+.btn {
+  display: inline-block;
+  padding: 16px 35px;
+  color: var(--main-color);
+  font-size: 18px;
+  border-radius: 10px;
+  margin-right: 20px;
+  transition: all .5s ease;
+}
+.btn:hover{
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+.btn2 {
+  display: inline-block;
+  font-size: 20px;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--text-color);
+  transition: all .5s ease;
+}
+.btn2:hover {
+  transform: scale(1.1) translateY(-6px);
+}
+
+
+.products-section {
+    padding: 5%;
+    text-align: center;
+}
+.products-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.product-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    width: 250px;
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.product-card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #ff4b2b;
+}
+.product-card p {
+    font-size: 1.2rem;
+    color: #999;
+}
+
+.btn-buy {
+  padding: 10px 20px;
+  background-color: #ff4b2b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-buy:hover {
+  background-color: #ff7a4b;
+}
+
+
+@media(max-width:1780px){
+  header{
+      padding: 22px 4%;
+  }
+  .content {
+      left: 4%;
+  }
+  section {
+      padding: 0 10%;
+  }
+}
+
+@media(max-width:1570px){
+  .hero-img img{
+      width: 650px;
+      height: 600px;
+  }
+  :root {
+      --h1-font: 5rem;
+      --p-font: 1rem
+  }
+}
+
+@media(max-width:1370px){
+  .hero-img img {
+      width: 600px;
+      height: 550px;
+  }
+  :root {
+      --h1-font: 4rem;
+  }
+}
+@media(max-width:1160px){
+  header {
+      padding: 10px 4%;
+  }
+  section {
+      padding: 30px 8%;
+  }
+  .hero {
+      height: auto;
+      grid-template-columns: 1fr;
+      gap: 5px;
+  }
+  .hero-img {
+      text-align: center;
+      padding-top: 30px;
+  }
+  .hero-img img {
+      width: 500px;
+      height: auto;
+      max-width: 100%;
+  }
+  .hero-text {
+      text-align: center;
+  }
+  .hero-text p {
+      margin: 10px auto;
+  }
+  .hero-text h5 {
+      font-size: 24px;
+  }
+}
+@media(max-width:600px){
+  .content {
+      gap: 18px;
+  }
+  :root {
+      --h1-font: 3.2rem;
+  }
+}
+@media(max-width:620px){
+  section {
+      padding: 20px 4%;
+  }
+  .btn {
+      padding: 12px 24px;
+  }
+}
